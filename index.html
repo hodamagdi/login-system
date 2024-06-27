@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>sign up</title>
+</head>
+
+<body>
+    <div class="container text-center min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center bg-white w-100 my-5">
+            <div class="col-md-12">
+                <div class="inner ">
+                    <h1 class="mt-5">Smart Login System</h1>
+                    <form id="registerForm">
+    
+                        <input id="signupName" class="signupName my-3 w-75" placeholder="Enter your name" type="text" />
+                        <input id="signupEmail" class="signupEmail my-3 w-75" placeholder="Enter your email" type="email" />
+    
+                        <input id="signupPassword" class="signupPassword my-3 w-75" placeholder="Ex: Password123@" type="password" />
+                        <div class="alert alert-danger w-50  mx-auto d-none " id="nameAlert">name must be at least two characters</div>
+                        <div class="alert alert-danger w-50 mx-auto  d-none" id="emailAlert">please enter a valid email</div>
+                        <div class="alert alert-danger w-50 mx-auto d-none " id="passwordAlert">-password must be at least 8 characters<br>-one uppercase at least<br>-one special character at least<br> one number at least</div>
+                        <div class="alert alert-danger w-50 mx-auto d-none " id="existAlert">Email is Already  Exist</div>
+                        <div class="alert alert-success w-50 mx-auto d-none" id="successAlert">success you can login</div>
+                        
+                        <button class="btn w-50 my-3" id="signupBtn" >
+                            Sign Up
+                        </button>
+                    </form>
+                    <p class="text-dark mb-5">
+                        You have an account? <a class="Signin" id="signinBtn" href="./html/login.html">Signin</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

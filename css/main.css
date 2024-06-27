@@ -1,0 +1,74 @@
+body{
+    background-image: url(../imgs/photo_2024-06-13_13-18-23.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.row>* {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+h1,
+h3 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* signUp  */
+.signupName ,
+.signupEmail,
+.signupPassword,
+/* signIn  */
+.signinEmail,
+.signinPassword,
+.btn{
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+}  
+
+/* signUp focus */
+.signupName:focus ,
+.signupEmail:focus,
+.signupPassword:focus,
+/* signIn  focus*/
+.signinEmail:focus,
+.signinPassword:focus{
+    outline: 0;
+    box-shadow: 0 0 0 .10rem #1985a0;
+}  
+
+/* signUp  */
+.signupName ,
+.signupEmail,
+.signupPassword,
+/* signIn  */
+.signinEmail,
+.signinPassword{
+    background-color: rgba(108, 214, 170, 0.1);
+} 
+
+.btn{
+    background-color:#1F4645;
+    color: azure;
+}
+.btn:hover{
+    background-color:#134442;
+    color: azure;
+}
+
+.Signin,
+.signUp{
+    color: black;
+}
+.Signin:hover,
+.signUp:hover{
+    color: #1985a0;
+}
+
